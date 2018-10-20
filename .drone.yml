@@ -1,0 +1,25 @@
+workspace:
+  base: /go
+  path: src/git.oxy.sh/oxy/czar
+
+pipeline:
+  build:
+    image: golang
+    environment:
+      - DATABASE_DRIVER=postgres
+      - DATABASE_CONFIG=postgres://czar_test:czar_test@postgres:5432/czar_test?sslmode=disable
+    commands:
+      - sleep 15
+      - go get github.com/gorilla/mux
+      - go get github.com/urfave/cli
+      - go get github.com/jinzhu/gorm
+      - go get github.com/lib/pq
+      - go test -v ./...
+
+services:
+  postgres:
+    image: postgres
+    environment:
+    - POSTGRES_USER=czar_test
+    - POSTGRES_DB=czar_test
+    - POSTGRES_PASSWORD=czar_test

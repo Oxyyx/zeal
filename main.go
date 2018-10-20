@@ -9,7 +9,7 @@ import (
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "Czar"
+	app.Name = "Zeal"
 	app.Usage = "Go-driven e-commerce"
 	app.Commands = []cli.Command{
 		cmd.Web,

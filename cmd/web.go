@@ -11,8 +11,8 @@ import (
 
 var Web = cli.Command{
 	Name:  "web",
-	Usage: "Start Czar web server",
-	Description: "Czar server application.",
+	Usage: "Start Zeal web server",
+	Description: "Zeal server application.",
 	Action: runWeb,
 	Flags: nil,
 }

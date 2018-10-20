@@ -1,13 +1,13 @@
 workspace:
   base: /go
-  path: src/git.oxy.sh/oxy/czar
+  path: src/git.oxy.sh/oxy/zeal
 
 pipeline:
   build:
     image: golang
     environment:
       - DATABASE_DRIVER=postgres
-      - DATABASE_CONFIG=postgres://czar_test:czar_test@postgres:5432/czar_test?sslmode=disable
+      - DATABASE_CONFIG=postgres://zeal_test:zeal_test@postgres:5432/zeal_test?sslmode=disable
     commands:
       - sleep 15
       - go get github.com/gorilla/mux
@@ -20,6 +20,6 @@ services:
   postgres:
     image: postgres
     environment:
-    - POSTGRES_USER=czar_test
-    - POSTGRES_DB=czar_test
-    - POSTGRES_PASSWORD=czar_test
+    - POSTGRES_USER=zeal_test
+    - POSTGRES_DB=zeal_test
+    - POSTGRES_PASSWORD=zeal_test

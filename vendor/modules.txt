@@ -1,0 +1,20 @@
+# git.oxy.sh/oxy/zeal v0.0.0-20181020202847-81a29d04baea
+git.oxy.sh/oxy/zeal/cmd
+git.oxy.sh/oxy/zeal/models
+git.oxy.sh/oxy/zeal/routes
+git.oxy.sh/oxy/zeal/render
+# github.com/gorilla/context v1.1.1
+github.com/gorilla/context
+# github.com/gorilla/mux v1.6.2
+github.com/gorilla/mux
+# github.com/jinzhu/gorm v1.9.2
+github.com/jinzhu/gorm
+github.com/jinzhu/gorm/dialects/postgres
+# github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a
+github.com/jinzhu/inflection
+# github.com/lib/pq v1.0.0
+github.com/lib/pq
+github.com/lib/pq/hstore
+github.com/lib/pq/oid
+# github.com/urfave/cli v1.20.0
+github.com/urfave/cli

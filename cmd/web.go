@@ -1,22 +1,23 @@
 package cmd
 
 import (
-	"github.com/gorilla/mux"
 	"git.oxy.sh/oxy/zeal/models"
 	"git.oxy.sh/oxy/zeal/routes"
+	"github.com/gorilla/mux"
 	"github.com/urfave/cli"
 	"log"
 	"net/http"
 )
 
 var Web = cli.Command{
-	Name:  "web",
-	Usage: "Start Zeal web server",
+	Name:        "web",
+	Usage:       "Start Zeal web server",
 	Description: "Zeal server application.",
-	Action: runWeb,
-	Flags: nil,
+	Action:      runWeb,
+	Flags:       nil,
 }
 
+// Start the main Zeal application.
 func runWeb(ctx *cli.Context) error {
 	r := mux.NewRouter()
 	routes.RegisterRoutes(r)

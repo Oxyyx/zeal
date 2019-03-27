@@ -1,6 +1,6 @@
 workspace:
   base: /go
-  path: src/git.oxy.sh/oxy/zeal
+  path: src/github.com/Oxyyx/zeal
 
 pipeline:
   build:

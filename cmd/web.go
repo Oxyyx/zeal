@@ -1,8 +1,8 @@
 package cmd
 
 import (
-	"git.oxy.sh/oxy/zeal/models"
-	"git.oxy.sh/oxy/zeal/routes"
+	"github.com/Oxyyx/zeal/models"
+	"github.com/Oxyyx/zeal/routes"
 	"github.com/gorilla/mux"
 	"github.com/urfave/cli"
 	"log"

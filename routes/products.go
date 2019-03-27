@@ -2,8 +2,8 @@ package routes
 
 import (
 	"github.com/gorilla/mux"
-	"git.oxy.sh/oxy/zeal/models"
-	"git.oxy.sh/oxy/zeal/render"
+	"github.com/Oxyyx/zeal/models"
+	"github.com/Oxyyx/zeal/render"
 	"net/http"
 	"strconv"
 )

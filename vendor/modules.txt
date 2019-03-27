@@ -1,11 +1,4 @@
-# git.oxy.sh/oxy/zeal v0.0.0-20181020202847-81a29d04baea
-git.oxy.sh/oxy/zeal/cmd
-git.oxy.sh/oxy/zeal/models
-git.oxy.sh/oxy/zeal/routes
-git.oxy.sh/oxy/zeal/render
-# github.com/gorilla/context v1.1.1
-github.com/gorilla/context
-# github.com/gorilla/mux v1.6.2
+# github.com/gorilla/mux v1.7.0
 github.com/gorilla/mux
 # github.com/jinzhu/gorm v1.9.2
 github.com/jinzhu/gorm

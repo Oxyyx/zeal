@@ -1,7 +1,7 @@
 package main
 
 import (
-	"git.oxy.sh/oxy/zeal/cmd"
+	"github.com/Oxyyx/zeal/cmd"
 	"github.com/urfave/cli"
 	"log"
 	"os"
